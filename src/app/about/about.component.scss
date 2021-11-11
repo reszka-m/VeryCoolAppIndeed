@@ -1,0 +1,30 @@
+
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 20px;
+}

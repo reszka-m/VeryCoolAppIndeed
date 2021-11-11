@@ -17,8 +17,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
 import {NgxSimpleCalendarModule} from 'ngx-simple-calendar';
-import {IvyGalleryModule} from 'angular-gallery';
 import { AboutComponent } from './about/about.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 @NgModule({
@@ -27,6 +27,7 @@ import { AboutComponent } from './about/about.component';
     NavComponent,
     HomeComponent,
     AboutComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +44,6 @@ import { AboutComponent } from './about/about.component';
     MatMenuModule,
     HttpClientModule,
     NgxSimpleCalendarModule,
-    IvyGalleryModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
