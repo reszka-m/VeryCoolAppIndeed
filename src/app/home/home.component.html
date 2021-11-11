@@ -1,0 +1,67 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Home</h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile colspan="2">
+
+      <mat-card class="dashboard-card">
+        <div class="icon-bar">
+          <a href="https://www.facebook.com/"><img src="/assets/images/facebook.png" class="icon-image"></a>
+          <a href="https://twitter.com/?lang=en"><img src="/assets/images/twitter.png" width="90px" height="80px"></a>
+          <a href="https://www.linkedin.com/"><img src="/assets/images/linkedin.png" width="90px" height="80px"></a>
+          <a href="https://www.instagram.com/"><img src="/assets/images/instagram.png" class="icon-image"></a>
+          <a href="https://www.youtube.com/"><img src="/assets/images/youtube.png" class="icon-image"></a>
+        </div>
+        <mat-card-header>
+          <mat-card-title class="card-title">
+            Apps
+          </mat-card-title>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-card class="dashboard-card">
+        <img src="{{weatherIcon}}" class="weather-icon">
+        <div class="temperature-segment">{{temperature}} °C</div>
+        <div class="description-segment">{{weatherType}}</div>
+        <mat-card-header>
+          <mat-card-title class="card-title">
+            {{cityName}}
+          </mat-card-title>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile >
+      <mat-card class="dashboard-card">
+        <ngx-simple-calendar class="calendar-container">
+          <ng-template #weekDays let-name="name">
+            <div class="week-days">
+              <span>{{name}}</span>
+            </div>
+          </ng-template>
+          <ng-template #day
+          let-date="number" let-events="events" let-active="today" let-weekend="weekend">
+          <div class="round-date" [class.active]="active" [class.weekend]="weekend">
+              <span>{{date}}</span>
+              <div class="events">
+                <div class="event"
+                [style.background-color]="event.data.color"
+                *ngFor="let event of events"
+                [title]="event.data.name + event.data.description"></div>
+            </div>
+          </div>
+          </ng-template>
+        </ngx-simple-calendar>
+        <mat-card-header>
+          <mat-card-title class="card-title">
+          </mat-card-title>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</div>
+
+<router-outlet></router-outlet>
+

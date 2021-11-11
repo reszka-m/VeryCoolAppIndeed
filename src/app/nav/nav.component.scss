@@ -1,0 +1,45 @@
+.sidenav-container {
+  height: 100%;
+  background: white;
+  color: #2e2e2e;
+}
+
+.sidenav {
+  width: 200px;
+  background: white;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  color: #2e2e2e;
+  font-size: 30px;
+}
+
+.sidebarFont:hover {
+  background-color: #d9d9d9;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: white;
+  background: #2e2e2e;
+  font-size: 30px;
+}
+
+.fontBright {
+  color: white;
+}
+
+.fontDark {
+  color: #2e2e2e;
+}
+
+.sidebarFont {
+  color: #2e2e2e;
+  font-size: 25px;
+  margin-top: 20px;
+  position: flex;
+  top: -28px;
+}

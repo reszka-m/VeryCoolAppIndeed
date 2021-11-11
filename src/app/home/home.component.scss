@@ -1,0 +1,118 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+.weather-icon{
+  background-size: 50px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  left: 10px;
+  top: 25px;
+}
+
+.description-segment {
+  position: absolute;
+  left: 30px;
+  top: 250px;
+  font-size: 3vw;
+}
+
+.temperature-segment {
+  position: absolute;
+  left: 30px;
+  top: 180px;
+  font-size: 3vw;
+}
+
+.fontBright {
+  color: white;
+}
+
+.fontDark {
+  color: #2e2e2e;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: #b3b3b3;
+  overflow: auto;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+
+.icon-bar a {
+  float: left;
+  text-align: center;
+  width: 20%;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #2e2e2e;
+}
+
+.icon-image {
+  width: 80px;
+  height: 80px;
+}
+
+.card-title {
+  color: #2e2e2e;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+.calendar-container {
+  position: absolute;  // The wrapper is positioned relative, so...
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.round-date {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    &.active {
+      border: 2px dashed #adadad;
+   }
+   &.weekend {
+      background: #ffe8e8;
+   }
+}
+.week-days {
+  font-size: 1.1vw;
+}
