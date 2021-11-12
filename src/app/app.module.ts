@@ -19,6 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {NgxSimpleCalendarModule} from 'ngx-simple-calendar';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { TodoComponent } from './todo/todo.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,6 +30,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     HomeComponent,
     AboutComponent,
     GalleryComponent,
+    TodoComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     MatMenuModule,
     HttpClientModule,
     NgxSimpleCalendarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,33 @@
+.container{
+  width: 400px;
+  margin: 0 auto;
+}
+
+.todo-list > li >div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.todo-list > li {
+  margin-top: 5px;
+}
+
+.todo-list button{
+  margin-left: 5px;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.todo-form input{
+  width: 100%;
+}
+
+.font-list {
+  font-size: 25px;
+}
