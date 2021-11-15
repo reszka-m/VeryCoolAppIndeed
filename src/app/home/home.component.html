@@ -25,8 +25,19 @@
         <div class="temperature-segment">{{temperature}} °C</div>
         <div class="description-segment">{{weatherType}}</div>
         <mat-card-header>
-          <mat-card-title class="card-title">
-            {{cityName}}
+          <mat-card-title>
+            <mat-form-field appearance="fill" class="mat-form-field">
+              <mat-label>Select a city</mat-label>
+              <mat-select [(value)]="cityName" (selectionChange)="this.getWeather()">
+                <mat-option value="Gdańsk" class="mat-option">Gdańsk</mat-option>
+                <mat-option value="Warszawa" class="mat-option">Warszawa</mat-option>
+                <mat-option value="London" class="mat-option">London</mat-option>
+                <mat-option value="New York" class="mat-option">New York</mat-option>
+                <mat-option value="Sidney" class="mat-option">Sidney</mat-option>
+                <mat-option value="Paris" class="mat-option">Paris</mat-option>
+                <mat-option value="Tokyo" class="mat-option">Tokyo</mat-option>
+              </mat-select>
+            </mat-form-field>
           </mat-card-title>
         </mat-card-header>
       </mat-card>

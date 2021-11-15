@@ -27,7 +27,7 @@
   width: 140px;
   height: 140px;
   left: 10px;
-  top: 40px;
+  top: 50px;
 }
 
 .description-segment {
@@ -116,5 +116,18 @@
    }
 }
 .week-days {
-  font-size: 1.1vw;
+  font-size: calc(4px + .5vw);
 }
+
+.mat-form-field {
+  width: 36vw;
+  max-width: 200px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.mat-option {
+  color: black !important;
+}
+
